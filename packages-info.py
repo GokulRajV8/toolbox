@@ -2,7 +2,7 @@
 
 import os, subprocess, json
 
-### main ###
+### main area ###
 if __name__ == "__main__" :
   # base directory of reports
   configFp = open("./config.json")

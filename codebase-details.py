@@ -31,7 +31,7 @@ def getDashes(num: int) -> str :
     num -= 1
   return output
 
-### convert list into a multi-line indented string ##
+### convert list into a multi-line indented string ###
 def formatList(ip:list, depth:int=0) -> str :
   op = ""
   ipSize = len(ip)
@@ -127,7 +127,7 @@ def formatStringTable(ip:list) -> str :
   op += border
   return op
 
-### get the file info from file name as [filetype, filesize_in_bytes, numberOfLines] ##
+### get the file info from file name as [filetype, filesize_in_bytes, numberOfLines] ###
 def getFileInfo(dir:str, filename:str) -> list :
   output = []
   # file type
@@ -146,7 +146,7 @@ def getFileInfo(dir:str, filename:str) -> list :
   fp.close()
   return output
 
-### get the list of files in a directory as a nested list ##
+### get the list of files in a directory as a nested list ###
 def getDirContent(dir:str, rootSize:int=0) -> list :
   op = []
   nonDirList = []
@@ -176,7 +176,7 @@ def getDirContent(dir:str, rootSize:int=0) -> list :
   op.extend(dirList)
   return op
 
-### get the consolidated info of all files present in the directory using getFileInfo recursively
+### get the consolidated info of all files present in the directory using getFileInfo recursively ###
 def getDirInfo(dir:str) -> list :
   output = []
 
@@ -216,7 +216,7 @@ def getDirInfo(dir:str) -> list :
 
   return output
 
-### main area ##
+### main area ###
 if __name__ == "__main__" :
   rootDirectory = input("Enter the root directory name : ")
   configFp = open("./config.json")
