@@ -222,7 +222,7 @@ if __name__ == "__main__" :
   configFp = open("./config.json")
   config = json.load(configFp)
   configFp.close()
-  fp = open(config["REPORTS_SRC_DIR"] + __slash + "output.txt", "w")
+  fp = open(config["REPORTS_SRC_DIR"] + __slash + "codebase-details.txt", "w")
   fp.write("Root directory name : " + rootDirectory + "\n")
   fp.write("\nDirectory structure :\n" + formatList(getDirContent(rootDirectory)) + "\n")
   result = [
@@ -236,4 +236,4 @@ if __name__ == "__main__" :
     i += 1
   fp.write("\nSize summary :\n" + formatStringTable(result) + "\n")
   fp.close()
-  print("Output written to " + config["REPORTS_SRC_DIR"] + __slash + "output.txt")
+  print("Output written to " + config["REPORTS_SRC_DIR"] + __slash + "codebase-details.txt")

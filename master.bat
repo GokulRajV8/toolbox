@@ -2,7 +2,7 @@
 
 title Toolbox
 
-cd C:\Repos\Toolbox
+cd C:\repos\main\toolbox
 
 echo.
 echo                     **************************************
