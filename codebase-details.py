@@ -141,7 +141,7 @@ def getFileInfo(dir:str, filename:str) -> list :
   try :
     output.append(len(fp.readlines()))
   except :
-    output[0] = "INV_CHAR"
+    output[0] = "INV_CHAR (" + parsedText[-1] + ")"
     output.append(0)
   fp.close()
   return output
